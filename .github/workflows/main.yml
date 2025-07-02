@@ -27,8 +27,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18' # Utilise Node.js 18
-          cache: 'npm'
-          cache-dependency-path: package-lock.json # Adaptez si votre package.json n'est pas à la racine
+          
+          
 
       # Étape pour installer les dépendances
       - name: Install Dependencies
