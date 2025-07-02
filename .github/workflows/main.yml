@@ -85,6 +85,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Create reports directory
+        run: mkdir -p reports
 
       # Étape pour exécuter OWASP Dependency-Check via Docker
       - name: Run OWASP Dependency-Check
