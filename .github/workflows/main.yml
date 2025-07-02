@@ -99,7 +99,7 @@ jobs:
             -v $(pwd):/src:rw \
             owasp/dependency-check:latest \
             --scan /src \
-            --format HTML,XML \
+            --format ALL \
             --project "Simple Node App" \
             --out /src/reports
 
